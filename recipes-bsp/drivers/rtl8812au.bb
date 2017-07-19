@@ -20,6 +20,7 @@ EXTRA_OEMAKE  = "ARCH=arm64"
 EXTRA_OEMAKE += "KSRC=${STAGING_KERNEL_BUILDDIR}"
 
 do_compile () {
+    unset LDFLAGS
     oe_runmake
 }
 

@@ -4,10 +4,10 @@ require linux-qcom-bootimg.inc
 DESCRIPTION = "Common Linaro Technologies Kernel"
 
 PV = "4.11+git${SRCPV}"
-SRCREV_kernel = "2e27e7ead35a0adf73297840ff02c600c1a55c30"
+SRCREV_kernel = "0ea6924010269ba065848b2e450673e96bceffd9"
 SRCREV_FORMAT = "kernel"
 
-SRC_URI = "git://github.com/EmbeddedAndroid/linux-1.git;protocol=https;branch=linux-v4.11.y-dev;name=kernel \
+SRC_URI = "git://github.com/EmbeddedAndroid/linux-1.git;protocol=https;branch=qcom-lt-4.4;name=kernel \
     file://distro.config \
 "
 SRC_URI_append_hikey += "file://hikey.config"

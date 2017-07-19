@@ -12,7 +12,7 @@ SRC_URI = "\
     file://25-bt-6lowpan.network \
     file://modules-gateway.conf \
     file://sysctl-gateway.conf \
-    file://NetworkManage.conf \
+    file://NetworkManager.conf \
 "
 
 # let's make sure we have a good image..

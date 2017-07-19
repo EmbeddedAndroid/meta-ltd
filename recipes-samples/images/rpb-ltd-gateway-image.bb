@@ -12,6 +12,7 @@ SRC_URI = "\
     file://25-bt-6lowpan.network \
     file://modules-gateway.conf \
     file://sysctl-gateway.conf \
+    file://NetworkManage.conf \
 "
 
 # let's make sure we have a good image..
@@ -52,6 +53,7 @@ fakeroot do_populate_rootfs_src () {
     cp ${WORKDIR}/25-bt-6lowpan.network ${IMAGE_ROOTFS}/etc/systemd/network/
     cp ${WORKDIR}/modules-gateway.conf ${IMAGE_ROOTFS}/etc/modules-load.d/
     cp ${WORKDIR}/sysctl-gateway.conf ${IMAGE_ROOTFS}/etc/sysctl.d/
+    cp ${WORKDIR}/NetworkManager.conf ${IMAGE_ROOTFS}/etc/NetworkManager/
 
     # Disable bluetooth service by default (allow to be contained in docker)
     ln -sf /dev/null ${IMAGE_ROOTFS}/etc/systemd/system/bluetooth.service

@@ -4,7 +4,7 @@ LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://Kconfig;md5=4b85004ff83dd932ff28f7f348fb2a28"
 
 SRC_URI = "git://github.com/EmbeddedAndroid/rtl8812AU_8821AU_linux.git;protocol=https"
-SRCREV = "e45578d34348a9f35cde6e56f163aa9311a318bf"
+SRCREV = "d1f7e7a3675c5895d9eb00f5b303e350fdccc0b2"
 
 S = "${WORKDIR}/git"
 

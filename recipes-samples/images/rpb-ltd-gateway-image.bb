@@ -38,11 +38,9 @@ CORE_IMAGE_BASE_INSTALL += " \
     python-shell \
     python-subprocess \
     python-unixadmin \
-    pciutils \
     strace \
     tcpdump \
-    qemu \
-    bridge-utils \
+    rtl8812au \
     vim \
 "
 

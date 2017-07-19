@@ -26,6 +26,6 @@ do_compile () {
 
 do_install () {
     install -d ${D}/lib/modules/${KERNEL_VERSION}
-    install -m 0755 ${B}/8812au.ko ${D}/lib/modules/${KERNEL_VERSION}/8812au.ko
+    install -m 0755 ${B}/rtl8812au.ko ${D}/lib/modules/${KERNEL_VERSION}/rtl8812au.ko
 }
 

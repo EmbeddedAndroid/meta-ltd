@@ -41,7 +41,9 @@ CORE_IMAGE_BASE_INSTALL += " \
     pciutils \
     strace \
     tcpdump \
-    vim-tiny \
+    qemu \
+    bridge-utils \
+    vim \
 "
 
 fakeroot do_populate_rootfs_src () {

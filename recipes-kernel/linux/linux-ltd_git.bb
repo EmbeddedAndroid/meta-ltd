@@ -4,7 +4,7 @@ require linux-qcom-bootimg.inc
 DESCRIPTION = "Common Linaro Technologies Kernel"
 
 PV = "4.4+git${SRCPV}"
-SRCREV_kernel = "0ea6924010269ba065848b2e450673e96bceffd9"
+SRCREV_kernel = "40e98b46d2d547c44ad1d0a0125cf4c6f963a3d4"
 SRCREV_FORMAT = "kernel"
 
 SRC_URI = "git://github.com/EmbeddedAndroid/linux-1.git;protocol=https;branch=qcom-lt-4.4;name=kernel \

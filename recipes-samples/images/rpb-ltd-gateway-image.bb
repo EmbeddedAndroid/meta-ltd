@@ -13,6 +13,7 @@ SRC_URI = "\
     file://modules-gateway.conf \
     file://sysctl-gateway.conf \
     file://NetworkManager.conf \
+    file://docker.service \
 "
 
 # let's make sure we have a good image..
@@ -54,6 +55,7 @@ fakeroot do_populate_rootfs_src () {
     cp ${WORKDIR}/modules-gateway.conf ${IMAGE_ROOTFS}/etc/modules-load.d/
     cp ${WORKDIR}/sysctl-gateway.conf ${IMAGE_ROOTFS}/etc/sysctl.d/
     cp ${WORKDIR}/NetworkManager.conf ${IMAGE_ROOTFS}/etc/NetworkManager/
+    cp ${WORKDIR/docker.service ${IMAGE_ROOTFS}/lib/systemd/system/
 
     # Disable bluetooth service by default (allow to be contained in docker)
     ln -sf /dev/null ${IMAGE_ROOTFS}/etc/systemd/system/bluetooth.service
